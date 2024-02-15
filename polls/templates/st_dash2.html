@@ -1,0 +1,24 @@
+{% block content %}
+    
+
+    <h2>Feedback</h2>
+    <table>
+        <tr>
+            
+            <th>Feedback</th>
+            <th>Image</th>
+        </tr>
+
+        {% for feedback in feedbacks %}
+            <tr>
+               
+                <td>{{ feedback.content }}</td>
+                {% if feedback.image %}
+                    <td><img src="{{feedback.image.url }}" width="200" height="200"></td>
+                {% else %}
+                    <td></td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

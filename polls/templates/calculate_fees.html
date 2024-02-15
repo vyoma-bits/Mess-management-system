@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculate Fees</title>
+</head>
+<body>
+    {% for fees in ER %}
+<div>
+  
+    <h2>{{ fees.name }}</h2>
+    <h2>{{ fees.exp }}</h2>
+    
+    {% endfor %}
+    <table>
+        <thead>
+        <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for fees in ER %}
+        <tr>
+        <td>{{fees.name}} </td>
+        <td>{{ fees.exp}} </td>
+        
+        </tr>
+        {% endfor %}
+        </tbody>
+        </table>
+    
+    
+</body>
+</html>

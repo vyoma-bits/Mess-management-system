@@ -1,0 +1,39 @@
+
+{% block title%} Checkout - My Awesome Cart{% endblock %}
+{% block body %}
+<div class="container">
+    <div class="col my-4">
+        
+        <div class="my-4">
+            <ul class="list-group" id="items">
+            </ul>
+        </div>
+    </div>
+    <div class="col my-4">
+        <h2>Enter Feedeback and ratings</h2>
+        <form method="post" enctype="multipart/form-data">{% csrf_token %}
+            <input type="hidden" name="itemsJson" id="itemsJson">
+           
+            <label for="image">Select an image:</label>
+            <input type="file" id="image" name="image">
+            <input type="submit" value="Upload">
+          
+            <div class="form-group">
+                <label for="inputAddress">feedback</label>
+                <input type="text" class="form-control" id="rating" name="address3" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">ratings</label>
+                <input type="text" class="form-control" id="address2" name="address2" placeholder="Apartment, studio, or floor">
+            </div>
+
+         
+            <button type="submit" class="btn btn-primary">Place Order</button>
+        </form>
+    </div>
+</div>
+
+
+
+{% endblock %}
+
