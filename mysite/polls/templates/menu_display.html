@@ -1,0 +1,190 @@
+
+{% block content1 %}
+<h1>Menu</h1>
+
+{% for menu_item in menu_items %}
+<div>
+
+    <h2>{{ menu_item.date }}</h2>
+    <span style="color: green; font-weight: bold;">Breakfast</span>
+
+    <form method="post">
+
+        <label for="name">Rating:</label>
+        <input type="text" id="r1" name="r1" value='0' required>
+        <label for="item">{{menu_item.item1}}</label>
+        <input type="text" id="item1" name="item1" value="{{menu_item.item1}}"  readonly required>
+
+    <p></p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Rating:</label>
+        <input type="text" id="r2" name="r2" value='0' required>
+        <label for="item">{{ menu_item.item2}}</label>
+        <input type="text" id="item2" name="item2" value="{{ menu_item.item2}}"  readonly required>
+    <p></p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Rating:</label>
+        <input type="text" id="r3" name="r3" value='0' required>
+        <label for="item">{{ menu_item.item3}}</label>
+        <input type="text" id="item3" name="item3" value="{{ menu_item.item3}}"  readonly required>
+    <p></p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Rating:</label>
+        <input type="text" id="r4" name="r4"  value='0' required>
+        <label for="item">{{ menu_item.item4}}</label>
+        <input type="text" id="item4"name="item4" value="{{ menu_item.item4}}"  readonly required>
+    <p></p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Rating:</label>
+        <input type="text" id="r5" name="r5" value='0' required>
+        <label for="item">{{ menu_item.item5}}</label>
+        <input type="text" id="item5"  name="item5" value="{{ menu_item.item5}}"  readonly  required>
+    <p></p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Rating:</label>
+        <input type="text" id="r6" name="r6" value='0' required>
+        <label for="item">{{ menu_item.item6}}</label>
+        <input type="text" id="item6" name="item6" value= "{{ menu_item.item6}}"  readonly required>
+    <p></p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Rating:</label>
+        <input type="text" id="r7" name="r7"value='0'  required>
+        <label for="item">{{ menu_item.item7}}</label>
+        <input type="text" id="item7" name="item7"value= "{{ menu_item.item7}}"  readonly required>
+    <p></p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Rating:</label>
+        <input type="text" id="r8" name="r8" value='0' required>
+        <label for="item">{{ menu_item.item8}}</label>
+        <input type="text" id="item8"name="item8" value="{{ menu_item.item8}}"  readonly  required>
+    <p></p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Rating:</label>
+        <input type="text" id="r9" name="r9" value='0' required>
+        <label for="item">{{ menu_item.item9}}</label>
+        <input type="text" id="item9" name="item9"  value="{{ menu_item.item9}}"  readonly required>
+
+    <p></p>
+    <span style="color: red; font-weight: bold;">Lunch</span>
+
+    <p></p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Rating:</label>
+        <input type="text" id="r10" name="r10" value='0' required>
+        <label for="item">{{ menu_item.item10}}</label>
+        <input type="text" id="item10"  name="item10" value="{{ menu_item.item10}}"  readonly  required>
+    <p></p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Rating:</label>
+        <input type="text" id="r11" name="r11" value='0' required>
+        <label for="item">{{ menu_item.item11}}</label>
+        <input type="text" id="item11" name="item11" value= "{{ menu_item.item11}}"  readonly required>
+    <p></p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Rating:</label>
+        <input type="text" id="r12" name="r12" value='0' required>
+        <label for="item">{{ menu_item.item12}}</label>
+        <input type="text" id="item12"  name="item12" value="{{ menu_item.item12}}"  readonly required>
+    <p></p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Rating:</label>
+        <input type="text" id="r13" name="r13" value='0' required>
+        <label for="item">{{ menu_item.item13}}</label>
+        <input type="text" id="item13"  name="item13" value= "{{ menu_item.item13}}"  readonly required>
+    <p></p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Rating:</label>
+        <input type="text" id="r14" name="r14" value='0' required>
+        <label for="item">{{ menu_item.item14}}</label>
+        <input type="text" id="item14"  name="item14" value= "{{ menu_item.item14}}"  readonly required>
+    <p></p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Rating:</label>
+        <input type="text" id="r15" name="r15"  value='0'required>
+        <label for="item">{{ menu_item.item15}}</label>
+        <input type="text" id="item15" name="item15" value="{{ menu_item.item15}}"  readonly  required>
+    <p></p>
+    <label for="name">Rating:</label>
+    <input type="text" id="r16" name="r16" value='0' required>
+    <label for="item">{{ menu_item.item16}}</label>
+    <input type="text" id="item16"name="item16" value= "{{ menu_item.item16}}"  readonly required>
+    <p></p>
+    <label for="name">Rating:</label>
+    <input type="text" id="r17" name="r17" value='0' required>
+    <label for="item">{{ menu_item.item17}}</label>
+    <input type="text" id="item17" name="item17" value= "{{ menu_item.item17}}"  readonly required>
+    <p></p>
+    <label for="name">Rating:</label>
+    <input type="text" id="r18" name="r18" value='0' required>
+    <label for="item">{{ menu_item.item18}}</label>
+    <input type="text" id="item18" name="item18" value="{{ menu_item.item18}}"  readonly required>
+    <p></p>
+    <span style="color: blue; font-weight: bold;">Dinner</span>
+    <p></p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Rating:</label>
+        <input type="text" id="r19" name="r19" value='0' required>
+        <label for="item">{{ menu_item.item19}}</label>
+        <input type="text" id="item19" name="item19" value="{{ menu_item.item19}}"  readonly required>
+    <p></p>
+    <label for="name">Rating:</label>
+    <input type="text" id="r20" name="r20"  value='0' required>
+    <label for="item">{{ menu_item.item20}}</label>
+    <input type="text" id="item20"  name="item20" value="{{ menu_item.item20}}"  readonly required>
+
+    <p></p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Rating:</label>
+        <input type="text" id="r21" name="r21" value='0' required>
+        <label for="item">{{ menu_item.item21}}</label>
+        <input type="text" id="item21"name="item21" value="{{ menu_item.item21}}"  readonly required>
+    <p></p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Rating:</label>
+        <input type="text" id="r22" name="r22" value='0' required>
+        <label for="item">{{ menu_item.item22}}</label>
+        <input type="text" id="item22"  name="item22" value="{{ menu_item.item22}}"  readonly required>
+    <p></p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Rating:</label>
+        <input type="text" id="r23" name="r23"  value='0' required>
+        <label for="item">{{ menu_item.item23}}</label>
+        <input type="text" id="item23"  name="item23" value="{{ menu_item.item23}}"  readonly required>
+    <p></p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Rating:</label>
+        <input type="text" id="r24" name="r24" value='0' required>
+        <label for="item">{{ menu_item.item24}}</label>
+        <input type="text" id="item24" name="item24" value="{{ menu_item.item24}}"  readonly required>
+
+        <input type="submit" value="Submit">
+        {% csrf_token %}
+      </form
+
+
+
+
+{% endfor %}
+
+
+
+{% endblock %}

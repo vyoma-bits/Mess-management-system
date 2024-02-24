@@ -1,0 +1,22 @@
+
+
+{% block content %}
+<h1>Mark Attendance</h1>
+
+<form method="post">
+{% csrf_token %}
+
+<label for="meal_time">Meal Time:</label>
+<select id="meal_time" name="meal_time">
+    <option value={{m}}>{{m}}</option>
+
+</select>
+<select id="use1" name="use1">
+    
+    <option value={{user}}>{{user}}</option>
+</select>
+
+<button type="submit">Mark Attendance</button>
+
+
+{% endblock %}
